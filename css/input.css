@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import "tailwindcss";
 
+
+@theme {
+   /* --color-*: initial; 모든 컬러 삭제 */
+  --color-min-500: #46bba5;
+}
+
+:root {
+  --bigger-text: 2rem;
+}
+.mint {
+  background-color: var(--color-min-500);
+  font-size: var(--bigger-text);
+}
+
 /*@theme {*/
 /*  --font-paci: "Pacifico", "sans-serif";*/
 /*}*/
