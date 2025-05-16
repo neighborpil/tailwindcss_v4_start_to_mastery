@@ -5,6 +5,23 @@
 @theme {
    /* --color-*: initial; 모든 컬러 삭제 */
   --color-min-500: #46bba5;
+  --text-10xl: 10rem;
+
+  --color-primary: #46bba5;
+
+  --color-secondary-50: #f0f9f4;
+  --color-secondary-100: #d9f2e8;
+  --color-secondary-200: #b3e6d1;
+  --color-secondary-300: #8ce0bb;
+  --color-secondary-400: #66d3a6;
+  --color-secondary-500: #46bba5;
+  --color-secondary-600: #3da493;
+  --color-secondary-700: #339d8c;
+  --color-secondary-800: #2a8b7a;
+  --color-secondary-900: #217a6b;
+
+  --color-primary2: oklch(0.7 0.2 240);
+
 }
 
 :root {
