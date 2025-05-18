@@ -6,7 +6,7 @@
   <title>Typography</title>
   <link rel="stylesheet" href="../../css/output.css">
 </head>
-<body>
+<body class="p-8">
 <div>
   <div class="text-2xl border-4 border-red-500 mb-5">Lorem ipsum dolor.</div>
   <div class="text-2xl outline-4 outline-blue-500 mb-5">Lorem ipsum dolor.</div>
@@ -34,7 +34,137 @@ ring: 바깥에 작용해서 하이라이트 줄때
 <br/>
 <div class="text-2xl m-4 p-3 border-4 border-red-500 ring-4 ring-red-700"></div>
 
+<div class="text-3xl border-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, architecto.</div>
+<div class="text-3xl p-px">Lorem ipsum dolor sit amet.</div>
+<div class="text-3xl p-[5px]">Lorem ipsum dolor sit amet.</div>
+<br/><br/>
+<button class="border-2 blur-[4px] ring-offset-color border-blue-400 p-2 hover:ring-4 hover:ring-blue-300 ring-offset-2 m-4 rounded">Ring Button</button>
+<br/><br/>
+<button class="border-2 blur-[2px] border-red-400/50 p-2 hover:outline-4 hover:outline-red-300 outline-offset-2 m-4 rounded">outline Button</button>
+
+<br/><br/>
+<button class="border-2 ring-2 ring-blue-300 ring-inset ring-offset-color border-blue-400 p-2 hover:ring-4 hover:ring-blue-300 ring-offset-2 m-4 rounded-none">Ring Button</button>
+<br/><br/>
+<button class="border-2 border-red-400 p-2 hover:outline-4 hover:outline-red-300 outline-offset-2 m-4 rounded-none">outline Button</button>
+
+<br/><br/>
+<button
+        class="
+    px-4 py-2
+    bg-blue-500 text-white font-semibold rounded-lg
+
+    /* 1) ring 초기 상태 */
+    ring-2 ring-blue-200 ring-offset-2 ring-offset-white
+
+    /* 2) box-shadow(=ring)만 애니메이트 */
+    transition-[box-shadow] duration-300 ease-in-out
+
+    /* 3) hover 시 ring 변화 */
+    hover:ring-4 hover:ring-blue-400
+  "
+>
+  Hover Me
+</button>
+
+<br/><br/>
+<button
+        class="
+      px-4 py-2
+      bg-red-500 text-white font-semibold rounded-lg
+
+      /* 초기 아웃라인 */
+      outline-solid outline-2 outline-red-200 outline-offset-2
+
+      /* outline 속성만 전환 */
+      transition-[outline] duration-300 ease-in-out
+
+      /* hover 시 아웃라인 확장 */
+      hover:outline-4 hover:outline-red-400
+    "
+>
+  Outline Hover
+</button>
+<br/><br/>
+<!-- ring-offset을 크게 -->
+<button class="border-2 border-blue-400 p-2 ring-offset-pink-200 hover:ring-8 hover:ring-blue-300 ring-offset-8 m-4 rounded">
+  Ring Button
+</button>
+
+<!-- outline-offset을 크게 -->
+<button class="border-2 border-red-400 p-2 hover:outline-8 hover:outline-red-300 outline-offset-8 m-4 rounded">
+  Outline Button
+</button>
 
 
+<br/><br/>
+<!-- ring-offset에 색상을 주어 두 겹처럼 보이게 -->
+<button class="border-2 border-blue-400 p-2
+               hover:ring-8 hover:ring-blue-300
+               hover:ring-offset-8 hover:ring-offset-pink-200
+               m-4 rounded">
+  Ring Button (2중 Ring)
+</button>
+<br/><br/>
+
+<button class="ring-sky-200">
+  안녕안녕
+</button>
+<button class="outline-dashed outline-pink-200">
+  안녕안녕
+</button>
+<br/><br/>
+<p class="divide-x-2 ">
+  <span class="p-2">Lorem ipsum dolor sit amet.</span>
+  <span class="p-2">Aperiam consequuntur illo veniam? Quis.</span>
+  <span class="p-2">Animi dicta ipsa iure ut.</span>
+  <span class="p-2">Accusantium beatae minima quasi ut.</span>
+</p>
+<br/><br/>
+<div class="p-3 m-3 border text-green-500">Lorem ipsum dolor sit amet.</div>
+<br/><br/>
+
+<div dir="ltr">
+  <div class="text-2xl p-4 m-4">Lorem ipsum dolor sit amet.</div>
+</div>
+
+<div dir="rtl">
+  <div class="text-2xl p-4 m-4">Lorem ipsum dolor sit amet.</div>
+</div>
+
+<div>
+  <div class="size-24 text-center bg-red-200 flex justify-center items-center rounded-md border-2 border-red-400">
+    <div>Square</div>
+  </div>
+  <div class="rounded-xs">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded-sm">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded-md">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded-lg">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded-xl">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded-2xl">Lorem ipsum dolor sit amet.</div>
+  <div class="rounded-3xl">Lorem ipsum dolor sit amet.</div>
+  <br/><br/>
+<!--  <div class="size-0.5">Lorem ipsum dolor sit amet.</div>-->
+<!--  <div class="size-1">Lorem ipsum dolor sit amet.</div>-->
+<!--  <div class="size-1.5">Lorem ipsum dolor sit amet.</div>-->
+<!--  <div class="size-2">Lorem ipsum dolor sit amet.</div>-->
+<!--  <div class="size-4">Lorem ipsum dolor sit amet.</div>-->
+</div>
+
+<br/><br/>
+<div class="group border-2 border-red-500 p-4 m-4 rounded-md bg-red-100 hover:bg-red-200">
+  <h1 class="group-hover:text-green-500">Heading</h1>
+  <p class="group-hover:text-red-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, libero?</p>
+</div>
+<br/><br/>
+<div class="m-5 p-3 border rounded-lg shadow-sm">Lorem adipisicing elit. Enim,</div>
+<div class="m-5 p-3 border rounded-lg shadow">Lorem adipisicing elit. Enim,</div>
+<div class="m-5 p-3 border rounded-lg shadow-md">Lorem adipisicing elit. Enim,</div>
+<div class="m-5 p-3 border rounded-lg shadow-lg">Lorem adipisicing elit. Enim,</div>
+<div class="m-5 p-3 border rounded-lg shadow-xl">Lorem adipisicing elit. Enim,</div>
+<div class="m-5 p-3 border rounded-lg shadow-2xl">Lorem adipisicing elit. Enim,</div>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 </body>
 </html>
